@@ -11,7 +11,8 @@ PHP로 웹과 DB를 연동한 뒤 장애를 해결한 기록입니다.
 ## 구성도
 브라우저 → Nginx(80) → PHP-FPM → MariaDB
 (관리 접속: SSH 22)
-[구성도 이미지 추가]
+<img width="712" height="192" alt="제목 없는 다이어그램 drawio" src="https://github.com/user-attachments/assets/48e328aa-ba14-4d08-b0e5-70940dc15b79" />
+
 
 ## 구축 내용
 1. VirtualBox에 Rocky Linux 설치, 윈도우에서 SSH 원격 접속
