@@ -4,9 +4,9 @@
 PHP로 웹과 DB를 연동한 뒤 장애를 해결한 기록입니다.
 
 ## 환경
-- VirtualBox 가상 머신 (메모리 4GB, CPU 2개, 디스크 20GB, 브리지 네트워크)
+- VirtualBox 가상 머신 (메모리 4GB CPU 2개 디스크 20GB 브리지 네트워크)
 - Rocky Linux 9.8 (Minimal)
-- Nginx, PHP-FPM, MariaDB 10.5
+- Nginx PHP-FPM MariaDB 10.5
 
 ## 구성도
 브라우저 → Nginx(80) → PHP-FPM → MariaDB
@@ -19,7 +19,7 @@ PHP로 웹과 DB를 연동한 뒤 장애를 해결한 기록입니다.
 2. Nginx 설치 후 서비스 실행 및 자동 시작 등록 (systemctl)
 3. 방화벽(firewalld)에서 필요한 서비스만 허용 (ssh, http)
 4. PHP-FPM 설치 및 Nginx 연동
-5. MariaDB 설치, `portfolio` DB와 `guestbook` 표 생성
+5. MariaDB 설치 `portfolio` DB와 `guestbook` 표 생성
 6. 웹 전용 DB 계정(webuser) 생성, `portfolio` DB에만 권한 부여 (최소 권한)
 7. PHP로 DB의 값을 읽어 브라우저에 출력
 [<img width="1309" height="571" alt="image" src="https://github.com/user-attachments/assets/74fee8f1-67d8-49df-a0b9-abea3d2505ca" />
@@ -41,12 +41,12 @@ PHP로 웹과 DB를 연동한 뒤 장애를 해결한 기록입니다.
 - 해결: 파일을 다시 작성해 정상 출력 확인
 
 ## 배운 점
-- 장애는 구간(네트워크, 방화벽, 서비스, 로그)별로 나누어 확인한다.
+- 장애는 구간(네트워크 방화벽 서비스 로그)별로 나누어 확인한다.
 - 서비스 계정에는 필요한 권한만 부여한다.
 - 에러 로그의 파일명과 줄 번호로 원인을 빠르게 찾을 수 있다.
 
 ## 진행 예정
-- SSH 키 로그인, root 접속 차단
+- SSH 키 로그인 root 접속 차단
 - 자동 백업(cron)
 - 장애 시나리오 추가 재현
 - HTTPS 적용
