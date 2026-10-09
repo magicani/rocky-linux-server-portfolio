@@ -1,4 +1,3 @@
-php
 <?php
 // 웹에서 MariaDB(portfolio DB)의 guestbook 표를 읽어 출력하는 예제
 // 실제 비밀번호는 보안상 ******** 로 가려서 올렸습니다.
