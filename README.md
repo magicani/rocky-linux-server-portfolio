@@ -22,9 +22,9 @@ PHP로 웹과 DB를 연동한 뒤 장애를 해결한 기록입니다.
 5. MariaDB 설치 `portfolio` DB와 `guestbook` 표 생성
 6. 웹 전용 DB 계정(webuser) 생성 `portfolio` DB에만 권한 부여 (최소 권한)
 7. PHP로 DB의 값을 읽어 브라우저에 출력
-[<img width="1309" height="571" alt="image" src="https://github.com/user-attachments/assets/74fee8f1-67d8-49df-a0b9-abea3d2505ca" />
+<img width="1309" height="571" alt="image" src="https://github.com/user-attachments/assets/74fee8f1-67d8-49df-a0b9-abea3d2505ca" />
  / <img width="658" height="321" alt="image" src="https://github.com/user-attachments/assets/ce8f6de3-d34a-4eac-9d80-765109162ab6" />
-]
+
 
 ## 트러블슈팅
 
