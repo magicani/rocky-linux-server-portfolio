@@ -37,7 +37,7 @@ PHP로 웹과 DB를 연동한 뒤 장애를 해결한 기록입니다.
 ### 2. PHP 페이지에서 nginx error 발생
 - 증상: `test.php` 접속 시 `nginx error!` 페이지
 - 확인: Nginx 에러 로그에는 PHP 연결 오류가 없음 -> PHP 로그(`/var/log/php-fpm/www-error.log`) 확인
-- 원인: PHP 로그에 `Parse error ... on line 1`, 파일 안의 오타
+- 원인: PHP 로그에 `Parse error ... on line 1` 파일 안의 오타
 - 해결: 파일을 다시 작성해 정상 출력 확인
 
 ## 배운 점
